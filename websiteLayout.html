@@ -1,0 +1,61 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+  }
+  #main > nav {
+    background: #D7E8D4;
+    order: 3;
+  }
+  #main > aside {
+    background: beige;
+    order: 2;
+  }
+  header, footer {
+    background: rgb(202, 205, 50);
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <header>Birds</header>
+  <div id="main">
+    <article>About Birds
+        <p>
+         Birds refer to the group of animals that have the ability to fly because they have wings. 
+         The bodies of birds are covered with feathers while their feet are covered by scales.
+         Birds have a pair of compound eyes. ...
+         Birds exist in many different species some of which are growing extinct.
+         Birds are very special animals that have particular characteristics which are common amongst all of them.
+         For instance, all of them have feathers, wings and two legs. 
+         Similarly, all birds lay eggs and are warm-blooded.
+         They are very essential for our environment and exist in different breeds.
+        </p>
+    </article>
+
+    <nav>Nav</nav>
+    <aside>Aside</aside>
+  </div>
+  <footer>Footer</footer>
+</body>
